@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang chủ - Bún Bò Huế ngon</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #f2f2f2;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        .gioithieu {
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        /* Định dạng cho form */
+        .feedback-form {
+            width: 50%;
+            margin: 0 auto;
+        }
+
+        /* Định dạng cho input và textarea */
+        input[type="text"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box; /* Đảm bảo rằng kích thước tính cả border và padding */
+        }
+
+        /* Định dạng cho nút gửi */
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* Định dạng cho nút gửi khi rê chuột qua */
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Chào mừng đến với Dương Nguyễn Quán</h1>
+        <p>Chuyên cung cấp bún bò Huế ngon tại Hà Nội</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#">Trang chủ</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">Đặt hàng</a></li>
+            <li><a href="#">Liên hệ</a></li>
+        </ul>
+    </nav>
+
+    <div class="gioithieu">
+        <h2>Giới thiệu về chúng tôi</h2>
+        <p>Bún bò Huế là một món ăn truyền thống của Việt Nam, chúng tôi tự hào là địa chỉ cung cấp bún bò Huế ngon nhất.</p>
+        <p>Hãy đến với chúng tôi và thưởng thức hương vị đặc trưng của bún bò Huế!</p>
+    </div>
+
+    <footer>
+        <p>© 2024. Bún Bò Huế ngon. All rights reserved.</p>
+    </footer>
+    <div class="feedback-form">
+        <h2>Ý kiến của bạn</h2>
+        <form action="submit_feedback.php" method="post">
+            <label for="name">Tên của bạn:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email của bạn:</label>
+            <input type="text" id="email" name="email" required>
+
+            <label for="message">Nội dung ý kiến:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <input type="submit" value="Gửi ý kiến">
+        </form>
+    </div>
+</body>
+</html>

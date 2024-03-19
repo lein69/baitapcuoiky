@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đặt hàng </title>
+    <style>
+        body {
+            background: url('https://img.freepik.com/premium-photo/crumpled-used-white-wrapping-paper-texture-background_108146-1924.jpg') no-repeat center center fixed;
+            background-size: cover;
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        .anhdoan {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+        }
+        .anhdoanchitiet {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .anhdoanchitiet img {
+            width: 300px;
+            height: 300px;
+            border-radius: 8px;
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+        form {
+            padding: 20px;
+            text-align: center;
+        }
+        input[type=text], input[type=number], select, textarea {
+            width: 100%;
+            padding: 12px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type=submit] {
+            width: 100%;
+            background-color: #1e88e5;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        input[type=submit]:hover {
+            background-color: #0d47a1;
+        }
+        footer {
+            background-color: #333;
+            padding: 20px;
+            text-align: center;
+            color:#fff;
+            font-size: larger;
+        }
+        nav {
+            background-color: #f2f2f2;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-size: larger;
+            font-weight: bold;
+        }
+       
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Đặt hàng đồ ăn Huế</h1>
+        <nav>
+            <ul>
+                <li><a href="Trang1.html">Trang chủ</a></li>
+                <li><a href="Trang1.html">Menu</a></li>
+                <li><a href="#">Đặt hàng</a></li>
+                <li><a href="Ex2.html">Liên hệ</a></li>
+            </ul>
+        </nav>
+        <div class="anhdoan">
+            <div class="anhdoanchitiet">
+                <img src="https://cdn.tgdd.vn/Files/2018/04/01/1078873/nau-bun-bo-hue-cuc-de-tai-nha-tu-vien-gia-vi-co-san-202109161718049940.jpg" alt="Bún bò Huế">
+                <p>Bún bò Huế</p>
+            </div>
+            <div class="anhdoanchitiet">
+                <img src="https://cdn.tgdd.vn/Files/2022/03/31/1423161/banh-khoai-la-banh-gi-cach-phan-biet-banh-khoai-va-banh-xeo-202203310719313430.jpg" alt="Bánh khoái Huế">
+                <p>Bánh khoái Huế</p>
+            </div>
+            <div class="anhdoanchitiet">
+                <img src="https://media.mia.vn/uploads/blog-du-lich/me-xung-hue-dac-san-dam-da-ban-sac-huong-vi-co-do-1637747684.jpg" alt="Mè xứng Huế">
+                <p>Mè xứng Huế</p>
+            </div>
+            <div class="anhdoanchitiet">
+                <img src="https://statics.vinpearl.com/tra-cung-dinh-hue-1_1631763565.jpg" alt="Trà cung đình">
+                <p>Trà cung đình</p>
+            </div>
+            <div class="anhdoanchitiet">
+                <img src="https://huesmiletravel.com.vn/images/Tr-Hu.jpg" alt="Tré Huế">
+                <p>Tré Huế</p>
+            </div>
+        </div>
+    </header>
+    
+    <form>
+        <label for="food">Chọn món ăn:</label>
+        <select id="food" name="food">
+            <option value="bunbo">Bún bò Huế</option>
+            <option value="banhkhoai">Bánh khoái Huế</option>
+            <option value="mexung">Mè xứng Huế</option>
+            <option value="tracungdinh">Trà cung đình</option>
+            <option value="trehue">Tré Huế</option>
+        </select>
+
+        <label for="quantity">Số lượng:</label>
+        <input type="number" id="quantity" name="quantity" min="1" max="10">
+
+        <label for="notes">Ghi chú:</label>
+        <textarea id="notes" name="notes" placeholder="Nhập ghi chú (nếu có)"></textarea>
+
+        <input type="submit" value="Đặt hàng">
+    </form>
+    <footer>
+        <p>© 2024 Dương Nguyễn Shop</p>
+    </footer>
+</body>
+</html>
