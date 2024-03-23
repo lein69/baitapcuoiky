@@ -25,7 +25,7 @@
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            width: calc(20% - 20px); /* 20% width và margin 10px */
+            width: calc(15% - 15px); /* 20% width và margin 10px */
         }
         .menu-item img:hover {
             transform: scale(1.1); /* Phóng to món ăn */
@@ -179,7 +179,36 @@
                 <input type="number" id="quantity-banhkhoai" class="quantity-input" value="1">
             </div>
         </div>
-        <!-- Thêm các món ăn khác vào đây -->
+       
+            <div class="menu-item">
+                <img src="https://media.mia.vn/uploads/blog-du-lich/me-xung-hue-dac-san-dam-da-ban-sac-huong-vi-co-do-1637747684.jpg" alt="Kẹo mè xừng">
+                <div class="info">
+                    <h2>Kẹo mè xừng</h2>
+                    <p>Giá: 25,000 VNĐ</p>
+                    <label for="quantity-keomexung">Số lượng:</label>
+                    <input type="number" id="quantity-keomexung" class="quantity-input" value="1">
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="https://statics.vinpearl.com/tra-cung-dinh-hue-1_1631763565.jpg" alt="Trà cung đình">
+                <div class="info">
+                    <h2>Trà cung đình</h2>
+                    <p>Giá: 25,000 VNĐ</p>
+                    <label for="quantity-tracungdinh">Số lượng:</label>
+                    <input type="number" id="quantity-tracungdinh" class="quantity-input" value="1">
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="https://huesmiletravel.com.vn/images/Tr-Hu.jpg" alt="Tré Huế">
+                <div class="info">
+                    <h2>Trà cung đình</h2>
+                    <p>Giá: 25,000 VNĐ</p>
+                    <label for="quantity-trhue">Số lượng:</label>
+                    <input type="number" id="quantity-tracungdinh" class="quantity-input" value="1">
+                </div>
+            </div>
     </div>
     <button class="order-btn">Đặt hàng</button>
 
@@ -222,5 +251,8 @@
             totalDisplay.textContent = `Tổng giá tiền: ${totalPrice},000 VNĐ`;
         });
     </script>
+    <br>
+    <br>
+    <br>
 </body>
 </html>
