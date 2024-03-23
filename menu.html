@@ -212,14 +212,14 @@
                 // Tạo phần tử hiển thị cho mỗi món
                 const orderedItem = document.createElement('div');
                 orderedItem.classList.add('ordered-item');
-                orderedItem.innerHTML = `<p>${name} - Số lượng: ${quantity} - Giá: ${price * quantity} VNĐ</p>`;
+                orderedItem.innerHTML = `<p>${name} - Số lượng: ${quantity} - Giá: ${price * quantity},000 VNĐ</p>`;
                 orderedItems.appendChild(orderedItem);
 
                 totalPrice += price * quantity;
             });
 
             // Hiển thị tổng giá tiền
-            totalDisplay.textContent = `Tổng giá tiền: ${totalPrice} VNĐ`;
+            totalDisplay.textContent = `Tổng giá tiền: ${totalPrice},000 VNĐ`;
         });
     </script>
 </body>
