@@ -5,7 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        
+        @media only screen and (max-width: 1000px) {
+        .header-image {
+            display: none;
+        }
+        nav ul{
+            padding:0;
+        }
+        nav ul li {
+            display: inline-block;
+            text-align: justify;
+            font-size: 70%;
+            vertical-align: top;
+        }
+        }
+        @media only screen and (min-width: 1001px) and (max-width: 1400px) {
+            .header-image {
+                
+            display: none;
+            } 
+        }
         body{
             background-image: url(https://img.pikbest.com/wp/202343/gift-wrap-texture-abstract-background-crumpled-gray-paper-for-wrapping-gifts-and-flowers_9942354.jpg!sw800);
             width: 100%;
@@ -86,6 +105,8 @@
             position: fixed;
             bottom: 0;
             width: 100%;
+            
+            
         }
         header {
             background-color:   rgb(49, 45, 45);
@@ -121,7 +142,7 @@
         <p2>© 2024. Dương Nguyễn Quán. All rights reserved.</p2>
     </footer>
 
-    <div class="bang">
+    <div  class="bang">
         <h1 style="text-align: center;">Ý kiến của bạn</h1>
         <form action="submit_feedback.php" method="post">
             <label style="font-size: 40px;" for="name">Tên của bạn:</label>
@@ -133,18 +154,18 @@
             <label style="font-size: 40px;"for="fullname">Tên món ăn</label></td>
             <input type="text" name="fullname" id="fullname" rows="4" cols="20"></td>
             
-            <label style="font-size: 40px;" for="fullname">Địa chỉ món ăn</label></td>
+            <label style="font-size: 40px;" for="fullname">Nguyên liệu món ăn</label></td>
             <textarea name="comment" id="comment" rows="4" cols="20"></textarea></td>
             
-            <label style="font-size: 40px;"for="fullname">Mô tả món ăn</label></td>
+            <label style="font-size: 40px;"for="fullname">Công thức món ăn</label></td>
             <textarea name="comment" id="comment"rows="4" cols="20"></textarea></td>
             
             <label style="font-size: 40px;"for="fullname">Hình ảnh mô tả</label></td>
             <input type="file" name="hinhanh" id="image" /><br/></td>
             
         </form>
+        <br>
         <center><a class="nutbam" href="trang3.html">Gửi ý kiến</a></center>
-    </div>
+    </div >
     <div style="height: 100px;"></div>
-    
 </html>
