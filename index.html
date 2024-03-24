@@ -5,17 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dương Nguyễn Shop</title>
     <style>
-    @media (max-width: 768px) {
+    @media only screen and (max-width: 1000px) {
         .header-image {
             display: none;
         }
-        nav {
-            background-color: #f2f2f2;
-            padding: 5px;
-            text-align: center;
-            color: #fff;
+        nav ul{
+            padding:0;
+        }
+        nav ul li {
+            display: inline-block;
+            text-align: justify;
+            font-size: 70%;
+            vertical-align: top;
         }
         }
+        @media only screen and (min-width: 1001px) and (max-width: 1400px) {
+            .header-image {
+                
+            display: none;
+                
+            }
+            
+        }
+        
         body{
             background-image: url('https://cdn.pixabay.com/photo/2017/07/08/11/33/white-2484120_1280.png');
             background-size: cover;
@@ -45,13 +57,7 @@
             margin-bottom: auto;
             padding-bottom: auto;
         }    
-        p{
-            
-            height: 50%;   
-            text-align: center; 
-            font-size: 24px;  
-               
-        }
+
         img{
             width: 450px;
             height: 400px;
@@ -67,7 +73,8 @@
             margin-left: 30%;
             margin-right: 30%;
             max-width: 1300px; 
-            
+            height: 50%;   
+            font-size: 24px;  
         }
 
         nav {
@@ -87,6 +94,7 @@
         nav ul li {
             display: inline-block;
             margin-right: 100px;
+            text-align: justify;
         }
         nav ul li:last-child {
             margin-right: 0;    
@@ -98,6 +106,7 @@
             font-size: 200%;
             font-weight: bold;
             transition: color 0.3s ease;
+            vertical-align: top;
         }
 
         footer {
